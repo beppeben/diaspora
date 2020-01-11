@@ -46,7 +46,7 @@ describe StatusMessagesController, :type => :controller do
 
     it 'should redirect on desktop version' do
       get :new
-      expect(response).to redirect_to(stream_path)
+      expect(response).to redirect_to(public_stream_path)
     end
   end
 

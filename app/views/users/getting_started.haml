@@ -26,16 +26,17 @@
               = label_tag :your_photo, t('profiles.edit.your_photo')
               = render 'photos/new_profile_photo', aspect: :getting_started, person: current_user.person
 
-        %h3
-          = t('.what_are_you_in_to')
+        -#
+          %h3
+            = t('.what_are_you_in_to')
 
-        %p
-          = t('.hashtag_explanation')
+          %p
+            = t('.hashtag_explanation')
 
-        = form_tag(tag_followings_path, method: 'get', class: "tag_input search_form") do
-          %fieldset
-            = label_tag 'follow_tags', t('.hashtag_suggestions')
-            #tags_list
-              = text_field_tag 'follow_tags', nil, class: "nostrap form-control"
+          = form_tag(tag_followings_path, method: 'get', class: "tag_input search_form") do
+            %fieldset
+              = label_tag 'follow_tags', t('.hashtag_suggestions')
+              #tags_list
+                = text_field_tag 'follow_tags', nil, class: "nostrap form-control"
         .text-center.awesome
           = link_to "#{t('.awesome_take_me_to_diaspora')} >>", stream_path, id: "awesome_button", class: "btn btn-default btn-lg btn-primary"

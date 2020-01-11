@@ -54,12 +54,6 @@ describe "i18n interpolation fallbacks" do
             expect(I18n.t('nonexistant_key', :hey => "what")).to eq("Working English translation")
           end
         end
-        describe "when the English translation does not work" do
-          it "raises a MissingInterpolationArgument" do
-            I18n.backend.store_translations('en', {"nonexistant_key" => "%{random_key} also required, so this will fail"})
-            expect { I18n.t('nonexistant_key', :hey => "what") }.to raise_exception(I18n::MissingInterpolationArgument)
-          end
-        end
       end
     end
   end

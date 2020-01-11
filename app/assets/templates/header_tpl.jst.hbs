@@ -9,16 +9,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="/stream" class="navbar-brand" data-stream-title="{{t "my_stream"}}">
+          <a href="/public" class="navbar-brand" data-stream-title="{{t "my_stream"}}">
             <span class="hidden-xs">{{ podname }}</span>
             <div class="visible-xs-block header-title">
               <img src="{{imageUrl 'branding/logos/asterisk_white_mobile.png'}}" alt="{{ podname }}" />
             </div>
           </a>
+          <!--
           <ul class="nav navbar-nav hidden-xs">
             <li><a href="/stream">{{t "my_stream"}}</a></li>
             <li><a href="/activity">{{t "my_activity"}}</a></li>
           </ul>
+          -->
           <ul class="nav navbar-nav nav-badges">
             <li class="dropdown" id="notification-dropdown">
               <a id="notifications-link" href="/notifications" title="{{t "header.notifications"}}" class="notifications-link nav-badge"
@@ -80,7 +82,7 @@
                 <li><a href="/people/{{current_user.guid}}">{{t "header.profile"}}</a></li>
                 <li><a href="/contacts">{{t "header.contacts"}}</a></li>
                 <li><a href="/user/edit">{{t "header.settings"}}</a></li>
-                <li><a href="/help">{{t "header.help"}}</a></li>
+                <!--<li><a href="/help">{{t "header.help"}}</a></li>-->
                 {{#if current_user.admin}}
                   <li><a href="/admins/dashboard">{{t "header.admin"}}</a></li>
                 {{else if current_user.moderator}}

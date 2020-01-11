@@ -8,7 +8,7 @@ class HomeController < ApplicationController
   def show
     partial_dir = Rails.root.join("app", "views", "home")
     if user_signed_in?
-      redirect_to stream_path
+      redirect_to public_stream_path
     elsif request.format == :mobile
       if partial_dir.join("_show.mobile.haml").exist? ||
          partial_dir.join("_show.mobile.erb").exist? ||
@@ -41,6 +41,6 @@ class HomeController < ApplicationController
   def force_mobile
     session[:mobile_view] = true
 
-    redirect_to stream_path
+    redirect_to public_stream_path
   end
 end

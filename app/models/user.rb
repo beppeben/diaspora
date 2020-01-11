@@ -436,9 +436,9 @@ class User < ApplicationRecord
   end
 
   def seed_aspects
-    self.aspects.create(:name => I18n.t('aspects.seed.family'))
-    self.aspects.create(:name => I18n.t('aspects.seed.friends'))
-    self.aspects.create(:name => I18n.t('aspects.seed.work'))
+    #self.aspects.create(:name => I18n.t('aspects.seed.family'))
+    #self.aspects.create(:name => I18n.t('aspects.seed.friends'))
+    self.aspects.create(:name => I18n.t('aspects.seed.partners'))
     aq = self.aspects.create(:name => I18n.t('aspects.seed.acquaintances'))
 
     if AppConfig.settings.autofollow_on_join?

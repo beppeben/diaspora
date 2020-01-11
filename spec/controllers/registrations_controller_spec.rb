@@ -94,10 +94,10 @@ describe RegistrationsController, type: :controller do
         expect(flash[:notice]).not_to be_blank
       end
 
-      it "redirects to the home path" do
+      it "redirects to the public stream path" do
         get :create, params: valid_params
         expect(response).to be_redirect
-        expect(response.location).to match(/^#{getting_started_url}$/)
+        expect(response.location).to match(/^#{public_stream_url}$/)
       end
 
       context "with invite code" do

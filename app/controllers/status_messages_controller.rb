@@ -28,7 +28,7 @@ class StatusMessagesController < ApplicationController
       @aspect = :all
       @aspects = current_user.aspects.load
     else
-      redirect_to stream_path
+      redirect_to public_stream_path
     end
   end
 
@@ -46,7 +46,7 @@ class StatusMessagesController < ApplicationController
   def create
     status_message = StatusMessageCreationService.new(current_user).create(normalize_params)
     respond_to do |format|
-      format.mobile { redirect_to stream_path }
+      format.mobile { redirect_to public_stream_path }
       format.json { render json: PostPresenter.new(status_message, current_user), status: 201 }
     end
   rescue StatusMessageCreationService::BadAspectsIDs
@@ -64,7 +64,7 @@ class StatusMessagesController < ApplicationController
   def handle_create_error(error)
     logger.debug error
     respond_to do |format|
-      format.mobile { redirect_to stream_path }
+      format.mobile { redirect_to public_stream_path }
       format.json { render plain: error.message, status: 403 }
     end
   end

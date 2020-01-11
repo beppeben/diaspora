@@ -799,9 +799,7 @@ describe User, :type => :model do
         user.seed_aspects
         user
       }
-
-      [I18n.t('aspects.seed.family'), I18n.t('aspects.seed.friends'),
-       I18n.t('aspects.seed.work'), I18n.t('aspects.seed.acquaintances')].each do |aspect_name|
+      [I18n.t('aspects.seed.partners'), I18n.t('aspects.seed.acquaintances')].each do |aspect_name|
         it "creates an aspect named #{aspect_name} for the user" do
           expect(user.aspects.find_by_name(aspect_name)).not_to be_nil
         end

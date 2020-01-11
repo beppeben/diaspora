@@ -56,43 +56,44 @@
             = f.submit t(".change_password"), class: "btn btn-primary pull-right", name: "change_password"
     %hr
 
-    .row
-      .col-md-12
-        %h3= t(".change_language")
-        = form_for "user", url: edit_user_path, html: {method: :put} do |f|
-          .form-inline.clearfix
-            = f.select :language, available_language_options, {}, class: "form-control form-group"
-            = f.submit t(".change_language"), class: "btn btn-primary pull-right"
-    %hr
+    -#
+      .row
+        .col-md-12
+          %h3= t(".change_language")
+          = form_for "user", url: edit_user_path, html: {method: :put} do |f|
+            .form-inline.clearfix
+              = f.select :language, available_language_options, {}, class: "form-control form-group"
+              = f.submit t(".change_language"), class: "btn btn-primary pull-right"
+      %hr
 
-    .row
-      .col-md-12
-        %h3= t(".change_color_theme")
-        = form_for "user", url: edit_user_path, html: {method: :put} do |f|
-          .form-inline.clearfix
-            = f.select :color_theme, available_color_themes, {}, class: "form-control form-group"
-            = f.submit t(".change_color_theme"), class: "btn btn-primary pull-right"
-    %hr
+      .row
+        .col-md-12
+          %h3= t(".change_color_theme")
+          = form_for "user", url: edit_user_path, html: {method: :put} do |f|
+            .form-inline.clearfix
+              = f.select :color_theme, available_color_themes, {}, class: "form-control form-group"
+              = f.submit t(".change_color_theme"), class: "btn btn-primary pull-right"
+      %hr
 
-    .row
-      .col-md-12
-        %h3#stream-preferences
-          = t(".stream_preferences")
-        = form_for current_user, url: edit_user_path, html: {method: :put} do |f|
+      .row
+        .col-md-12
+          %h3#stream-preferences
+            = t(".stream_preferences")
+          = form_for current_user, url: edit_user_path, html: {method: :put} do |f|
 
-          = f.fields_for :stream_preferences do
-            #stream_prefs
-              - if AppConfig.settings.community_spotlight.enable?
-                = f.label :show_community_spotlight_in_stream, class: "checkbox-inline" do
-                  = f.check_box :show_community_spotlight_in_stream
-                  = t(".show_community_spotlight")
+            = f.fields_for :stream_preferences do
+              #stream_prefs
+                - if AppConfig.settings.community_spotlight.enable?
+                  = f.label :show_community_spotlight_in_stream, class: "checkbox-inline" do
+                    = f.check_box :show_community_spotlight_in_stream
+                    = t(".show_community_spotlight")
 
-              = f.label :getting_started, class: "checkbox-inline" do
-                = f.check_box :getting_started
-                = t(".show_getting_started")
+                = f.label :getting_started, class: "checkbox-inline" do
+                  = f.check_box :getting_started
+                  = t(".show_getting_started")
 
-            .clearfix= f.submit t(".change"), class: "btn btn-primary pull-right"
-    %hr
+              .clearfix= f.submit t(".change"), class: "btn btn-primary pull-right"
+      %hr
 
     .row
       .col-md-12
@@ -180,16 +181,17 @@
             .clearfix= f.submit t(".change"), class: "btn btn-primary pull-right", id: "change_email_preferences"
       %hr
 
-    .row
-      .col-md-12
-        %h3#protocol-handler
-          = t(".protocol_handler.title")
-        %p= t(".protocol_handler.description", pod_url: AppConfig.pod_uri.site)
-        %p= t(".protocol_handler.browser")
-        .form-group
-          %button.btn.btn-default#register-protocol-handler
-            = t(".protocol_handler.register")
-    %hr
+    -#
+      .row
+        .col-md-12
+          %h3#protocol-handler
+            = t(".protocol_handler.title")
+          %p= t(".protocol_handler.description", pod_url: AppConfig.pod_uri.site)
+          %p= t(".protocol_handler.browser")
+          .form-group
+            %button.btn.btn-default#register-protocol-handler
+              = t(".protocol_handler.register")
+      %hr
 
     .row
       .col-md-6.account-data

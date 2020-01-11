@@ -93,7 +93,7 @@ class ApplicationController < ActionController::Base
     if user_signed_in?
       I18n.locale = current_user.language
     else
-      locale = http_accept_language.language_region_compatible_from AVAILABLE_LANGUAGE_CODES
+      #locale = http_accept_language.language_region_compatible_from AVAILABLE_LANGUAGE_CODES
       locale ||= DEFAULT_LANGUAGE
       I18n.locale = locale
     end
@@ -156,7 +156,7 @@ class ApplicationController < ActionController::Base
     if current_user.getting_started? && !current_user.basic_profile_present?
       getting_started_path
     else
-      stream_path
+      public_stream_path
     end
   end
 

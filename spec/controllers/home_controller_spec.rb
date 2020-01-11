@@ -23,10 +23,10 @@ describe HomeController, type: :controller do
       expect(response).to redirect_to(user_session_path)
     end
 
-    it "redirects to the stream if the user is signed in" do
+    it "redirects to the public stream if the user is signed in" do
       sign_in alice
       get :show
-      expect(response).to redirect_to(stream_path)
+      expect(response).to redirect_to(public_stream_path)
     end
   end
 

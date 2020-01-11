@@ -80,7 +80,7 @@ class UsersController < ApplicationController
         format.any { redirect_to person_path(@user.person) }
       end
     else
-      redirect_to stream_path, error: I18n.t("users.public.does_not_exist", username: params[:username])
+      redirect_to public_stream_path, error: I18n.t("users.public.does_not_exist", username: params[:username])
     end
   end
 
@@ -98,7 +98,7 @@ class UsersController < ApplicationController
     user = current_user
     user.getting_started = false
     user.save
-    redirect_to stream_path
+    redirect_to public_stream_path
   end
 
   def export_profile

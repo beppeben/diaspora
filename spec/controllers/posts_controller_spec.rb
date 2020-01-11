@@ -186,10 +186,10 @@ describe PostsController, type: :controller do
         expect(response.status).to eq(204)
       end
 
-      it "redirects to stream on mobile" do
+      it "redirects to public stream on mobile" do
         delete :destroy, params: {id: post.id}, format: :mobile
         expect(response).to be_redirect
-        expect(response).to redirect_to stream_path
+        expect(response).to redirect_to public_stream_path
       end
     end
 

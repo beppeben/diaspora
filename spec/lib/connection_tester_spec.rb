@@ -7,6 +7,7 @@ describe ConnectionTester do
 
   describe "::check" do
     it "takes a http url and returns a result object" do
+      WebMock.allow_net_connect!
       res = ConnectionTester.check("https://pod.example.com")
       expect(res).to be_a(ConnectionTester::Result)
     end

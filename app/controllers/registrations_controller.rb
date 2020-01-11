@@ -16,6 +16,7 @@ class RegistrationsController < Devise::RegistrationsController
       flash[:notice] = t("registrations.create.success")
       @user.process_invite_acceptence(invite) if invite.present?
       @user.seed_aspects
+      @user.disable_getting_started
       @user.send_welcome_message
       sign_in_and_redirect(:user, @user)
       logger.info "event=registration status=successful user=#{@user.diaspora_handle}"

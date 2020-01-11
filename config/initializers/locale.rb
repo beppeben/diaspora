@@ -21,7 +21,13 @@ else
   RTL_LANGUAGES = []
 end
 
-DEFAULT_LANGUAGE = "en"
+if Rails.env.test?
+  DEFAULT_LANGUAGE = "en"
+else
+  DEFAULT_LANGUAGE = "fr"
+end
+
+puts DEFAULT_LANGUAGE
 
 
 # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.

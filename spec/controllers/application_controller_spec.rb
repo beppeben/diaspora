@@ -99,8 +99,8 @@ describe ApplicationController, :type => :controller do
         TagFollowing.create!(tag: @tag, user: alice)
       end
 
-      it "redirects to stream if the user has getting started set to true and has already added tags" do
-        expect(@controller.send(:after_sign_in_path_for, alice)).to eq(stream_path)
+      it "redirects to public stream if the user has getting started set to true and has already added tags" do
+        expect(@controller.send(:after_sign_in_path_for, alice)).to eq(public_stream_path)
       end
     end
 
@@ -112,8 +112,8 @@ describe ApplicationController, :type => :controller do
         allow(@controller).to receive(:current_user).and_return(alice)
       end
 
-      it "redirects to stream if the user has getting started set to true and has already added a photo" do
-        expect(@controller.send(:after_sign_in_path_for, alice)).to eq(stream_path)
+      it "redirects to public stream if the user has getting started set to true and has already added a photo" do
+        expect(@controller.send(:after_sign_in_path_for, alice)).to eq(public_stream_path)
       end
     end
   end

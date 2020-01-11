@@ -37,31 +37,33 @@
 .small-horizontal-spacer
 
 %hr
-%h3.inline
-  = t('profiles.edit.settings')
 
-.small-horizontal-spacer
+-#
+    %h3.inline
+    = t('profiles.edit.settings')
 
-%h4= t('search')
+    .small-horizontal-spacer
 
-.well.checkbox
-  = label_tag 'profile[searchable]', class: "checkbox-inline" do
-    = check_box_tag 'profile[searchable]', true, profile.searchable
-    = t('profiles.edit.allow_search')
+    %h4= t('search')
 
-.small-horizontal-spacer
+    .well.checkbox
+    = label_tag 'profile[searchable]', class: "checkbox-inline" do
+        = check_box_tag 'profile[searchable]', true, profile.searchable
+        = t('profiles.edit.allow_search')
 
-%h4= t('nsfw')
-%p
-  = t('profiles.edit.nsfw_explanation')
-.well.checkbox
-  = label_tag 'profile[nsfw]', class: "checkbox-inline" do
-    = check_box_tag 'profile[nsfw]', true, profile.nsfw?
-    = t('profiles.edit.nsfw_check')
+    .small-horizontal-spacer
 
-.small-horizontal-spacer
+    %h4= t('nsfw')
+    %p
+    = t('profiles.edit.nsfw_explanation')
+    .well.checkbox
+    = label_tag 'profile[nsfw]', class: "checkbox-inline" do
+        = check_box_tag 'profile[nsfw]', true, profile.nsfw?
+        = t('profiles.edit.nsfw_check')
 
-= t('profiles.edit.nsfw_explanation2')
+    .small-horizontal-spacer
+
+    = t('profiles.edit.nsfw_explanation2')
 
 .small-horizontal-spacer
 

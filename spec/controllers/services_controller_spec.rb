@@ -57,11 +57,6 @@ describe ServicesController, :type => :controller do
         expect(Service.count).to eq(service_count)
       end
 
-      it 'flashes an already_authorized error with the diaspora handle for the user'  do
-        post :create, params: {provider: "twitter"}
-        expect(flash[:error].include?(user.profile.diaspora_handle)).to be true
-        expect(flash[:error].include?( 'already authorized' )).to be true
-      end
     end
 
     context 'Twitter' do
@@ -81,11 +76,6 @@ describe ServicesController, :type => :controller do
           service_count = Service.count
           post :create, params: {provider: "twitter"}
           expect(Service.count).to eq(service_count)
-        end
-
-        it 'flashes an read-only access error'  do
-          post :create, params: {provider: "twitter"}
-          expect(flash[:error].include?( 'Access level is read-only' )).to be true
         end
       end
     end

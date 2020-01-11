@@ -7,12 +7,12 @@ class PollParticipationsController < ApplicationController
     answer = PollAnswer.find(params[:poll_answer_id])
     poll_participation = current_user.participate_in_poll!(target, answer) if target
     respond_to do |format|
-      format.mobile { redirect_to stream_path }
+      format.mobile { redirect_to public_stream_path }
       format.json { render json: poll_participation, :status => 201 }
     end
   rescue ActiveRecord::RecordInvalid
     respond_to do |format|
-      format.mobile { redirect_to stream_path }
+      format.mobile { redirect_to public_stream_path }
       format.json { head :forbidden }
     end
   end

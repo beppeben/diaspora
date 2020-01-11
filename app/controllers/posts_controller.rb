@@ -60,7 +60,7 @@ class PostsController < ApplicationController
     post_service.destroy(params[:id])
     respond_to do |format|
       format.json { head :no_content }
-      format.any { redirect_to stream_path }
+      format.any { redirect_to public_stream_path }
     end
   end
 

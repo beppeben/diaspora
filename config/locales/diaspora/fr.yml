@@ -278,6 +278,7 @@ fr:
       family: "Famille"
       friends: "Amis"
       work: "Travail"
+      partners: "Partenaires"
     update:
       failure: "Votre aspect %{name} a un nom trop long pour être enregistré."
       success: "Votre aspect %{name} a été modifié avec succès."
@@ -592,7 +593,7 @@ fr:
     default:
       be_who_you_want_to_be: "Soyez celui que vous voulez"
       be_who_you_want_to_be_info: "De nombreux réseaux vous incitent à utiliser votre véritable identité. Pas diaspora*. Ici, vous pouvez choisir qui vous voulez être et partager autant ou aussi peu que vous le souhaitez. C'est vraiment vous qui décidez de la façon dont vous interagissez avec les autres."
-      byline: "Le réseau social où vous gardez le contrôle."
+      byline: "Discuter investissement immobilier comme au bar"
       choose_your_audience: "Choisissez votre public"
       choose_your_audience_info: "Les aspects de diaspora* vous permettent de partager seulement avec les personnes que vous choisissez. Vous demeurez aussi ouvert ou aussi restreint que vous le souhaitez. Partagez des photos amusantes avec le monde entier, ou un grand secret avec vos amis les plus proches. C'est vous qui avez le contrôle."
       diaspora_site_link: "réseau fédéré diaspora*"
@@ -600,6 +601,13 @@ fr:
       own_your_data: "Soyez propriétaire de vos données"
       own_your_data_info: "De nombreux réseaux utilisent vos données pour gagner de l'argent en analysant vos interactions et en utilisant ces informations pour vous proposer des publicités ciblées. Vos données sur diaspora* ne servent qu'à vous mettre en relation et à partager avec d'autres personnes."
       part_of_diaspora: "Nœud du %{diaspora_site_link}"
+      share_experiences: "Partagez vos expériences"
+      share_experiences_info: "Que vous soyez des investisseurs chevronnés ou des débutants, vos expériences (réussies ou moins réussies) peuvent être très utiles aux autres. Parlez-en !"
+      discuss_opportunities: "Discutez des opportunités"
+      discuss_opportunities_info: "Vous souhaitez avoir un avis sur une affaire que vous considérez ? Ou chercher des partenaires car les montants sont trop importants ? Un échange peut changer la manière de voir les choses."
+      independent_space: "Un espace indépendant"
+      independent_space_info: "Loin des grands réseaux sociaux, nous pouvons faire évoluer cet espace et rajouter des fonctionnalités en toute liberté."
+      immo_network: "Réseau d'investisseurs immobiliers"
     podmin:
       byline: "Vous êtes sur le point de changer la face d'Internet. Prêt à vous lancer ?"
       configuration_info: "Ouvrez %{database_path} et %{diaspora_path} dans votre éditeur de texte favori et relisez-les soigneusement, ils sont abondamment commentés."
@@ -992,7 +1000,7 @@ fr:
       your_name: "Votre nom"
       your_photo: "Votre photo"
       your_tags: "Décrivez-vous en 5 mots"
-      your_tags_placeholder: "comme #films #repassage #voyage #professeur #paris"
+      your_tags_placeholder: "comme #rénovations #location-meublée #paris"
     update:
       failed: "Impossible de mettre à jour le profil"
       updated: "Profil mis à jour"
@@ -1004,7 +1012,7 @@ fr:
       find_pods: "Une liste de pods sur lesquels vous pouvez vous inscrire est disponible sur %{poduptime}."
       other_questions: "Si vous avez d'autres questions sur le choix d'un pod, consultez notre %{wiki}."
     create:
-      success: "Vous avez rejoint diaspora* !"
+      success: "Vous avez rejoint immo-bar !"
     invalid_invite: "Le lien d'invitation que vous avez fourni n'est plus valide !"
     new:
       email: "Adresse électronique"
@@ -1170,9 +1178,12 @@ fr:
     mentions:
       title: "@Mentions"
     multi:
-      title: "Flux"
+      title: "Mon flux"
     public:
       title: "Activité publique"
+      talk_investment: "Parlons investissement immobilier, comme au bar!"
+      share_stuff: "N’hésitez pas à partager vos succès, vos échecs, vos questions, opportunités ou recherches de partenaires."
+      introduce_yourself: "Et si vous êtes nouveaux, n'oubliez pas de vous présenter!"
     tags:
       title: "Messages tagués : %{tags}"
   tag_followings:
@@ -1210,7 +1221,7 @@ fr:
       change_button: "Activer"
       change_label: "Activer la double authentification"
       status: "Double authentification inactive"
-    explanation: "La double authentification est un moyen efficace de garantir que vous serez le seul à pouvoir vous identifier avec votre compte. À la connexion, vous saisirez un code à 6 chiffres en plus de votre mot de passe afin de prouver votre identité. Soyez prudent néanmoins : si vous égarez votre téléphone et vos codes de récupération créés à l'activation de cette fonctionnalité, vous perdrez définitivement l'accès à votre compte diaspora*."
+    explanation: "La double authentification est un moyen efficace de garantir que vous serez le seul à pouvoir vous identifier avec votre compte. À la connexion, vous saisirez un code à 6 chiffres en plus de votre mot de passe afin de prouver votre identité. Soyez prudent néanmoins : si vous égarez votre téléphone et vos codes de récupération créés à l'activation de cette fonctionnalité, vous perdrez définitivement l'accès à votre compte."
     flash:
       error_token: "Le jeton est incorrect ou invalide"
       success_activation: "Double authentification activée avec succès"
@@ -1293,10 +1304,10 @@ fr:
       your_email_private: "Votre email ne sera jamais vu par d'autres utilisateurs"
       your_handle: "Votre identifiant diaspora*"
     getting_started:
-      awesome_take_me_to_diaspora: "Impressionnant ! Guidez-moi vers diaspora*"
-      community_welcome: "La communauté diaspora* est heureuse de vous avoir à son bord !"
-      hashtag_explanation: "Les tags vous permettent de parler de vos centres d'intérêt et de suivre ce qui s'en dit. Ils sont aussi un excellent moyen de rencontrer de nouvelles personnes sur diaspora*."
-      hashtag_suggestions: "Essayez de suivre des tags comme #art, #films, #french, etc."
+      awesome_take_me_to_diaspora: "Impressionnant ! Guidez-moi vers immo-bar"
+      community_welcome: "Nous sommes heureux de vous compter parmi nous !"
+      hashtag_explanation: "Les tags vous permettent de parler de vos centres d'intérêt et de suivre ce qui s'en dit. Ils sont aussi un excellent moyen de rencontrer de nouvelles personnes."
+      hashtag_suggestions: "Essayez de suivre des tags qui vous correspondent."
       well_hello_there: "Bienvenue !"
       what_are_you_in_to: "Qu'aimez-vous faire ?"
       who_are_you: "Qui êtes-vous ?"

@@ -40,11 +40,12 @@ Diaspora.Pages.UsersGettingStarted = function() {
       var message = Diaspora.I18n.t("getting_started.preparing_your_stream");
       var confirmation = true;
 
+      /*
       if ($("#as-selections-tags").find(".as-selection-item").length <= 0) {
         message = Diaspora.I18n.t("getting_started.alright_ill_wait");
         confirmation = confirm(confirmMessage);
       }
-
+      */
       app.flashMessages.success(message);
       return confirmation;
     });

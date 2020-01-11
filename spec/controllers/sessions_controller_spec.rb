@@ -16,17 +16,17 @@ describe SessionsController, type: :controller do
   end
 
   describe "#create" do
-    it "redirects to /stream for a non-mobile user" do
+    it "redirects to /public for a non-mobile user" do
       post :create, params: {user: {remember_me: "0", username: @user.username, password: "evankorth"}}
       expect(response).to be_redirect
-      expect(response.location).to match /^#{stream_url}\??$/
+      expect(response.location).to match /^#{public_stream_url}\??$/
     end
 
-    it "redirects to /stream for a mobile user" do
+    it "redirects to /public for a mobile user" do
       request.headers["X_MOBILE_DEVICE"] = true
       post :create, params: {user: {remember_me: "0", username: @user.username, password: "evankorth"}}
       expect(response).to be_redirect
-      expect(response.location).to match /^#{stream_url}\??$/
+      expect(response.location).to match /^#{public_stream_url}\??$/
     end
   end
 

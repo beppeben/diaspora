@@ -254,12 +254,6 @@ describe UsersController, :type => :controller do
       expect(response.status).to eq(200)
     end
 
-    it 'displays community spotlight checkbox' do
-      AppConfig.settings.community_spotlight.enable = true
-      get :edit, params: {id: @user.id}
-      expect(response.body).to include('input name="user[show_community_spotlight_in_stream]"')
-    end
-
     it 'hides community spotlight checkbox' do
       AppConfig.settings.community_spotlight = false
       get :edit, params: {id: @user.id}

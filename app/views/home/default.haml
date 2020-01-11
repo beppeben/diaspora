@@ -4,10 +4,6 @@
       .row
         .col-md-8.text-center
           %h1= t("home.default.headline", pod_name: pod_name)
-          - if pod_name != "diaspora*"
-            %h2.part-of-diaspora
-              != t("home.default.part_of_diaspora",
-                diaspora_site_link: link_to(t("home.default.diaspora_site_link"), "https://diasporafoundation.org/"))
           %h2= t("home.default.byline")
         .col-md-4.login-form
           = render partial: "sessions/form", locals: {mobile: false, resource: User.new, resource_name: :user}
@@ -17,15 +13,15 @@
     .col-md-4
       .landing-info-card
         %h3.text-center
-          = t(".own_your_data")
-        = t(".own_your_data_info")
+          = t(".share_experiences")
+        = t(".share_experiences_info")
     .col-md-4
       .landing-info-card
         %h3.text-center
-          = t(".choose_your_audience")
-        = t(".choose_your_audience_info")
+          = t(".discuss_opportunities")
+        = t(".discuss_opportunities_info")
     .col-md-4
       .landing-info-card
         %h3.text-center
-          = t(".be_who_you_want_to_be")
-        = t(".be_who_you_want_to_be_info")
+          = t(".independent_space")
+        = t(".independent_space_info")

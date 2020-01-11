@@ -223,6 +223,7 @@ en:
       work: "Work"
       acquaintances: "Acquaintances"
       friends: "Friends"
+      partners: "Partners"
     index:
       donate: "Donate"
       keep_pod_running: "Keep %{pod} running fast and buy servers their coffee fix with a monthly donation!"
@@ -557,6 +558,13 @@ en:
       choose_your_audience_info: "diaspora*’s aspects allow you to share with just those people you want to. You can be as public or as private as you like. Share a funny photo with the whole world, or a deep secret just with your closest friends. You’re in control."
       own_your_data: "Own your own data"
       own_your_data_info: "Many networks use your data to make money by analysing your interactions and using this information to advertise things to you. diaspora* doesn’t use your data for any purpose other than allowing you to connect and share with others."
+      share_experiences: "blah"
+      share_experiences_info: "blah"
+      discuss_opportunities: "blah"
+      discuss_opportunities_info: "blah"
+      independent_space: "blah"
+      independent_space_info: "blah"
+      immo_network: "Réseau d'investisseurs immobiliers"
     podmin:
       headline: "Welcome, friend."
       byline: "You’re about to change the Internet. Let’s get you set up, shall we?"
@@ -1191,6 +1199,10 @@ en:
 
     public:
       title: "Public activity"
+      talk_investment: "blah"
+      share_stuff: "blah"
+      introduce_yourself: "blah"
+    
 
     multi:
       title: "Stream"
