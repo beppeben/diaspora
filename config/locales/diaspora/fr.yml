@@ -937,7 +937,7 @@ fr:
       results_for: "Utilisateurs correspondant à %{search_term}"
       search_handle: "Utilisez leur identifiant diaspora* (nomutilisateur@urldupod) pour être sûr de trouver vos amis."
       searching: "Recherche en cours, veuillez patienter…"
-      send_invite: "Toujours rien ? Envoyez leur une invitation !"
+      send_invite: "Vous ne les trouvez pas ? Envoyez leur une invitation !"
     person:
       thats_you: "C'est vous !"
     profile_sidebar:

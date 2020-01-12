@@ -44,7 +44,7 @@ class PeopleController < ApplicationController
         # only do it if it is a diaspora*-ID
         if diaspora_id?(search_query)
           @people = Person.where(diaspora_handle: search_query.downcase, closed_account: false)
-          background_search(search_query) if @people.empty?
+          # background_search(search_query) if @people.empty?
         end
         @people = @people.paginate(:page => params[:page], :per_page => 15)
         @hashes = hashes_for_people(@people, @aspects)
