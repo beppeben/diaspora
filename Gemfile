@@ -318,3 +318,5 @@ group :development, :test do
   # For `assigns` in controller specs
   gem "rails-controller-testing", "1.0.4"
 end
+
+gem "rake", "12.3.2"
