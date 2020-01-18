@@ -270,7 +270,6 @@ group :development do
   # test coverage
   gem "simplecov", "0.16.1", require: false
 
-  gem "turbo_dev_assets", "0.0.2"
 end
 
 group :test do
@@ -320,3 +319,4 @@ group :development, :test do
 end
 
 gem "rake", "12.3.2"
+gem "turbo_dev_assets", "0.0.2"
