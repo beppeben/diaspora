@@ -76,11 +76,6 @@ describe PeopleController, :type => :controller do
           expect(assigns[:background_query]).to eq(nil)
         end
 
-        it 'sets background query task if the user is not found' do
-          get :index, params: {q: "Eugene@Example1.ORG"}
-          expect(assigns[:background_query]).to eq("eugene@example1.org")
-        end
-
         it "doesn't include closed accounts" do
           get :index, params: {q: @closed.diaspora_handle}
           expect(assigns[:people].size).to eq(0)

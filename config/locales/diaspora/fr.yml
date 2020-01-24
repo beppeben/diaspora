@@ -91,7 +91,7 @@ fr:
     user_entry:
       account_closed: "Compte fermé"
       admin: "Administrateur"
-      diaspora_handle: "identifiant diaspora*"
+      diaspora_handle: "identifiant immo-bar"
       email: "E-mail"
       guid: "GUID"
       id: "ID"
@@ -290,9 +290,9 @@ fr:
       failure: "Je n'ai pas pu cesser d'ignorer cet utilisateur. #évasion"
       success: "Voyons ce qu'ils ont à dire ! #ditesbonjour"
   bookmarklet:
-    explanation: "Publiez sur diaspora* depuis n'importe où en ajoutant %{link} à vos marque-pages."
+    explanation: "Publiez sur immo_bar depuis n'importe où en ajoutant %{link} à vos marque-pages."
     heading: "Bookmarklet"
-    post_something: "Publiez sur diaspora*"
+    post_something: "Publiez sur immo-bar"
   cancel: "Annuler"
   color_themes:
     dark: "Sombre"
@@ -1259,12 +1259,12 @@ fr:
       character_minimum_expl: "doit comporter au moins six caractères"
       close_account:
         dont_go: "Hé, s'il vous plaît, ne partez pas !"
-        lock_username: "Votre nom d'utilisateur sera bloqué. Vous ne pourrez pas créer un nouveau compte sur ce pod avec le même nom."
+        lock_username: "Votre nom d'utilisateur sera bloqué. Vous ne pourrez pas créer un nouveau compte avec le même nom."
         locked_out: "Vous serez déconnecté et votre compte sera inaccessible jusqu'à sa suppression."
-        make_diaspora_better: "Nous aimerions beaucoup que vous restiez pour nous aider à améliorer diaspora* plutôt que de nous quitter. Toutefois, si c'est vraiment ce que vous souhaitez, voilà ce qui va se passer :"
+        make_diaspora_better: "Nous aimerions beaucoup que vous restiez pour nous aider à améliorer immo-bar plutôt que de nous quitter. Toutefois, si c'est vraiment ce que vous souhaitez, voilà ce qui va se passer :"
         mr_wiggles: "Mr Wiggles sera triste de vous voir partir."
         no_turning_back: "Il n'est pas possible de revenir en arrière ! Si vous êtes sûr de vous, saisissez votre mot de passe ci-dessous."
-        what_we_delete: "Nous supprimerons toutes vos publications et toutes les données de votre profil dès que possible. Vos commentaires sur les messages d'autres gens resteront visibles, mais seront associés à votre identifiant diaspora* plutôt qu'à votre nom."
+        what_we_delete: "Nous supprimerons toutes vos publications et toutes les données de votre profil dès que possible. Vos commentaires sur les messages d'autres gens resteront visibles, mais seront associés à votre identifiant plutôt qu'à votre nom."
       close_account_text: "Fermer le compte"
       comment_on_post: "…quelqu'un commente un de vos messages."
       current_password: "Mot de passe actuel"
