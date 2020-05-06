@@ -1182,8 +1182,8 @@ fr:
     public:
       title: "Activité publique"
       talk_investment: "Parlons investissement immobilier, comme au bar!"
-      share_stuff: "N’hésitez pas à partager vos succès, vos échecs, vos questions, opportunités ou recherches de partenaires."
-      introduce_yourself: "Et si vous êtes nouveaux, n'oubliez pas de vous présenter!"
+      share_stuff: "Un chasseur (semi) automatique nous partage régulièrement des propositions de biens rentables."
+      introduce_yourself: "Aidons-le à s'améliorer! N'hésitez pas à lui faire savoir quand ses propositions vous semblent utiles ou bien quand elles vous paraissent totalement ratées!"
     tags:
       title: "Messages tagués : %{tags}"
   tag_followings:
